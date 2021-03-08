@@ -1,12 +1,12 @@
 *{
-    margi: 0px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 body{
     height: 100vh;
-    background: linear-gradient(to top, #373B44, #4286f4);;
+    background: rgba(59,127,226,255) ;
     font-family: 'Akaya Telivigala', cursive;
     display: flex;
     flex-direction: column;
@@ -37,11 +37,11 @@ body{
 
 #nav{
     margin-top: 5px;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #227093;
+    background:linear-gradient(to left, #373B44, #4286f4);
     
     height: 50px;
 }
@@ -62,7 +62,7 @@ body{
     background-color: transparent;
     border: 0px solid;
     color:white ; 
-    
+    font-family: 'Akaya Telivigala', cursive;
     font-size: 20px;
     margin-top: 10px;
     margin-left: 8px;
@@ -74,7 +74,14 @@ body{
 
 #srch input::placeholder {
     color: rgba(255, 255, 255, 0.445);
-  }
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+#sr{
+    font-size: 24px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
 
 #info{
     display : flex ;
@@ -182,6 +189,35 @@ body{
 
 
 @media(max-width:360px){
+    #nav{
+        margin-top: 9px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30px;
+        
+    }
+    
+    #srch input{
+        margin-bottom: 0px;
+        margin-top: 4px;
+        margin-left: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        
+    }
+
+    #info{
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+}
+
+
+@media(max-width:260px){
     #nav{
         margin-top: 9px;
         width: 100%;
